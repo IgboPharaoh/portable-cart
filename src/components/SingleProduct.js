@@ -24,7 +24,7 @@ const SingleProduct = ({ prod }) => {
                 <div>4 days Delivery</div>
               )}
             </span>
-            <Rating rating={prod.rating} />
+            <Rating rating={prod.ratings} />
           </Card.Subtitle>
           {cart.some((x) => x.id === prod.id) ? (
             <Button variant="danger" onClick={() => {
